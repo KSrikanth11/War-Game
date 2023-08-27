@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+
+}
+body{
+    cursor: url('https://i.ibb.co/fY2nZ4f/pngwing-com-4.png'),auto;
+    /* overflow: visible; */
+    /* height: 100%; */
+    /* z-index: 100px; */
+    /* overflow: hidden; */
+    /* max-width: 110px; */
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.background img{
+   width: 100%;
+   height: 95%;
+   /* position: absolute; */
+    /* background-image: url('https://img.freepik.com/free-photo/cruel-war-scenes-digital-painting_456031-162.jpg?w=826&t=st=1692815033~exp=1692815633~hmac=970081b258fe9393fa10b0225a15be23b9608237311788f558622685680dd480'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+   top: 0;
+   left: 0;
+   /* z-index: -1; */
+   /* opacity: 2; */
+   background-color: rgba(236, 9, 9, 0.404);
+
+}
+.landbackground img{
+    width: 100%;
+   height: 100vh;
+   /* position: absolute; */
+    /* background-image: url('https://img.freepik.com/free-photo/cruel-war-scenes-digital-painting_456031-162.jpg?w=826&t=st=1692815033~exp=1692815633~hmac=970081b258fe9393fa10b0225a15be23b9608237311788f558622685680dd480'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+   top: 0;
+   left: 0;
+}
+ .button {
+     width: 130px; 
+    height: 30px;
+    /* padding: 20px; */
+    background-color: rgb(22, 157, 236);
+    position: absolute;
+    bottom: 90px;
+    left: 40%;
+    border-radius: 15%;
+    /* text-align: center; */
+    text-decoration: none;
+    box-shadow: 12px 12px 10px rgba(36, 35, 35, 0.699);
+}
+.button:hover{
+    border: 1px solid black;
+    background-color:rgb(69, 209, 228);
+}
+.start{
+    /* width: 30px; */
+    /* height: 30px; */
+    margin-top: 4px;
+    text-decoration: none;
+    color: rgb(13, 13, 14);
+    text-align: center;
+    align-items: center;
+    
+}
+.container .boxes{
+    position: relative;
+    
+}
+ img{
+    width: 200px;
+    height: 200px;
+    /* background-color: aliceblue; */
+    /* z-index: 20; */
+    position: absolute;
+    bottom: 10px;
+    left: 37%;
+    /* mix-blend-mode:hard-light; */
+    /* mix-blend-mode: multiply; */
+    /* overflow: hidden; */
+    
+}
+/* .check{ */
+   
+   /* background-color: transparent; */
+    /* animation-name: fly; */
+    /* margin-left: 100px; */
+    /* transform: translateX(120px); */
+    /* animation-duration: 1s; */
+    /* cursor: pointer; */
+/* } */
+.checked{
+    display: none;
+}
+
+ #plane1 img{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    /* top: 40px; */
+    bottom: 0;
+    left:50px; 
+    transition: 0s ease-out;
+    animation:fly 8s linear 1s infinite ;
+    /* transform: */
+    /* cursor: pointer; */
+    
+}
+#plane2 img{
+    width: 0px;
+    height: 0px;
+    background-color:transparent;
+    position: absolute;
+    top: 40px;
+    left:50px;
+    transition: 0s ease-in-out;
+    animation:fly1  9s linear 2s infinite ;
+    /* transform: */
+ }
+#plane3 img{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 40px;
+    left:80px;
+    transition: 6s ease-in;
+    animation:fly1  10s linear 3s infinite ;
+    /* transform: */
+} 
+ #plane4 img {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 40px;
+    left:80px;
+    transition: 6s ease-in;
+    animation:fly2  10s linear infinite 6s;
+    /* transform: */
+}  
+ #plane5 img{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 40px;
+    left:80px;
+    transition: 6s ease-in;
+    animation:fly3  10s linear infinite 9s;
+    animation-delay: 10s;
+    /* transform: */
+}  
+  #plane6 img{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 40px;
+    left:80px;
+    transition: 6s ease-in;
+    animation:fly4  10s linear infinite 20s;
+    /* animation-delay: 30s; */
+    /* transform: */
+  }    
+  #plane7 img{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 40px;
+    left:80px;
+    transition: 6s ease-in;
+    animation:fly5  11s linear infinite 4s;
+    /* animation-delay: 30s; */
+    /* transform: */
+  }    
+  #plane8 img{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 40px;
+    left:80px;
+    transition: 6s ease-in;
+    animation:fly6  11s linear infinite 1s;
+    /* animation-delay: 30s; */
+    /* transform: */
+  }    
+
+@keyframes fly {
+    from{
+        transform: translate(310px,190px);
+        width: 10px;
+        height:10px;
+        
+    }
+    to{
+        transform: translate(-120px,-200px);
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+}
+ @keyframes fly1 {
+    from{
+        transform: translate(400px,190px);
+        width: 20px;
+        height:20px;
+    }
+    to{
+        transform: translate(900px,-200px);
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+}
+@keyframes fly2 {
+    from{
+        transform: translate(400px,250px);
+        width: 10px;
+        height:10px;
+    }
+    to{
+        transform: translate(200px,60px);
+        /* transform: rotateX(30); */
+        width: 600px;
+        height: 600px;
+    }
+    
+    
+}
+@keyframes fly3 {
+    from{
+        transform: translate(200px,250px);
+        width: 40px;
+        height:10px;
+    }
+    to{
+        transform: translate(-350px,90px);
+        /* transform: rotateX(30); */
+        width: 400px;
+        height: 200px;
+    }
+    
+    
+}
+@keyframes fly4 {
+    from{
+        transform: translate(100px,80px);
+        width: 400px;
+        height:400px;
+    }
+    to{
+        transform: translate(200px,250px);
+        /* transform: rotateX(30); */
+        width: 20px;
+        height: 20px;
+    }
+    
+    
+}
+@keyframes fly5 {
+    from{
+        transform: translate(600px,280px);
+        width: 50px;
+        height:30px;
+    }
+    to{
+        transform: translate(-200px,250px);
+        /* transform: rotateX(30); */
+        width: 400px;
+        height: 400px;
+    }
+    
+    
+}
+@keyframes fly6 {
+    from{
+        transform: translate(1000px,280px);
+        width: 50px;
+        height:30px;
+    }
+    to{
+        transform: translate(700px,50px);
+        /* transform: rotateX(30); */
+        width: 400px;
+        height: 400px;
+    }
+    
+    
+}
+ 
+.score{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    /* left: 50%; */
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    font-weight: 300px;
+    z-index: 30;
+    background-color: rgb(227, 227, 230);
+}
